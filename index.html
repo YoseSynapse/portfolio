@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Jose Gomez — Full-Stack Developer</title>
+<meta name="description" content="Jose Gomez builds websites, software, apps and secure back ends. Flagship portfolio: live projects, a working JavaScript lab, and real Python running in the browser." />
+<link rel="icon" href="assets/mark.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,800&family=Inter:wght@400;500;600;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css?v=2" />
+<script>document.documentElement.classList.add("js");</script>
+</head>
+<body>
+<div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+<!-- ============ NAV ============ -->
+<header class="nav" id="topnav">
+  <a class="brand" href="#top" aria-label="Jose Gomez — home">
+    <img src="assets/mark.png" alt="V.R World Media master mark" class="brand__mark" width="38" height="38" />
+    <span class="brand__name">Jose&nbsp;Gomez</span>
+  </a>
+  <nav class="nav__links" aria-label="Primary">
+    <a href="#work">Work</a>
+    <a href="#lab">The Lab</a>
+    <a href="#backend">Back End</a>
+    <a href="#skills">Skills</a>
+    <a href="#process">Process</a>
+    <a href="#contact" class="nav__cta">Contact</a>
+  </nav>
+  <button class="nav__burger" id="menuBtn" aria-label="Open menu" aria-expanded="false" aria-controls="drawer">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+<aside class="drawer" id="drawer" aria-hidden="true">
+  <nav aria-label="Mobile">
+    <a href="#work">Work</a>
+    <a href="#lab">The Lab</a>
+    <a href="#backend">Back End</a>
+    <a href="#skills">Skills</a>
+    <a href="#process">Process</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <p class="drawer__note">Full stack developer, V.R World Media</p>
+</aside>
+<div class="scrim" id="scrim" hidden></div>
+
+<main id="top">
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <canvas id="waveCanvas" class="hero__canvas" aria-hidden="true"></canvas>
+    <div class="hero__inner">
+      <p class="eyebrow reveal">Full stack developer · V.R World Media</p>
+      <h1 class="hero__title reveal">Jose <span class="grad">Gomez</span></h1>
+      <p class="hero__sub reveal">I build <strong>websites, software, apps</strong>, and the
+        <strong>secure back ends</strong> behind them. This page is the flagship: every module on it
+        actually runs, including real Python, live in your browser.</p>
+      <div class="hero__ctas reveal">
+        <a class="btn btn--primary" href="#work">See the live work</a>
+        <a class="btn btn--ghost" href="#lab">Enter the Lab</a>
+      </div>
+      <dl class="stats reveal">
+        <div class="stat"><dt>Live websites</dt><dd><span class="count" data-count="3">0</span></dd></div>
+        <div class="stat"><dt>Public repos</dt><dd><span class="count" data-count="4">0</span></dd></div>
+        <div class="stat"><dt>Core languages</dt><dd><span class="count" data-count="5">0</span></dd></div>
+        <div class="stat"><dt>Frameworks on this page</dt><dd><span class="count" data-count="0">0</span></dd></div>
+      </dl>
+      <p class="hero__fine reveal">Hand written HTML5 · CSS · JavaScript · Python, no page builders, no templates.</p>
+    </div>
+  </section>
+
+  <!-- ============ PROOF STRIP ============ -->
+  <section class="strip" aria-label="Live proof">
+    <div class="strip__row">
+      <span class="strip__label">Live right now</span>
+      <a href="https://yosesynapse.github.io/faceless-wicks/" target="_blank" rel="noopener">Faceless Wicks — landing page</a>
+      <a href="https://yosesynapse.github.io/fes-bookstore/" target="_blank" rel="noopener">FES Bookstore — front-end demo</a>
+      <a href="https://yosesynapse.github.io/vrwm-legal/" target="_blank" rel="noopener">VRWM Legal — privacy &amp; terms</a>
+      <a href="https://github.com/yosesynapse" target="_blank" rel="noopener">github.com/yosesynapse</a>
+    </div>
+  </section>
+
+  <!-- ============ WORK ============ -->
+  <section class="section" id="work">
+    <div class="section__head reveal">
+      <p class="eyebrow">Selected work</p>
+      <h2>Proof, not promises.</h2>
+      <p class="section__lede">Every project below is real and reachable. Where something is a
+        demonstration, it says so on its face. That honesty is part of the work.</p>
+    </div>
+
+    <div class="cards">
+      <article class="card reveal">
+        <figure class="card__media">
+          <img src="assets/shot-fw.png" alt="Screenshot of the live Faceless Wicks landing page" loading="lazy" />
+          <span class="badge badge--live">Live</span>
+        </figure>
+        <div class="card__body">
+          <h3>Faceless Wicks — Landing Page</h3>
+          <p>Animated brand page for a chart reading education channel: living candle banner
+            (smile ↔ frown), real brand assets, merch section, full education only disclaimer.</p>
+          <ul class="chips"><li>HTML5</li><li>CSS animation</li><li>JavaScript</li></ul>
+          <div class="card__links">
+            <a href="https://yosesynapse.github.io/faceless-wicks/" target="_blank" rel="noopener">Live site</a>
+            <a href="https://github.com/YoseSynapse/faceless-wicks" target="_blank" rel="noopener">Repo</a>
+            <button class="linklike" data-modal="modal-fw">Details</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="card reveal">
+        <figure class="card__media">
+          <img src="assets/shot-bookstore.png" alt="Screenshot of the live FES Bookstore demo" loading="lazy" />
+          <span class="badge badge--live">Live</span>
+        </figure>
+        <div class="card__body">
+          <h3>FES Bookstore — Front-End Demo</h3>
+          <p>Coursework storefront rebuilt to a functioning standard: catalog grid, one class
+            mobile drawer, honest demo banner, checkout intentionally not wired, prices are sample data.</p>
+          <ul class="chips"><li>HTML5</li><li>CSS Grid</li><li>JavaScript</li></ul>
+          <div class="card__links">
+            <a href="https://yosesynapse.github.io/fes-bookstore/" target="_blank" rel="noopener">Live site</a>
+            <a href="https://github.com/YoseSynapse/fes-bookstore" target="_blank" rel="noopener">Repo</a>
+            <button class="linklike" data-modal="modal-store">Details</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="card reveal">
+        <figure class="card__media card__media--code" aria-hidden="true">
+          <pre class="mini-code"><code><span class="tk-k">class</span> <span class="tk-f">Hub</span>(BaseHTTPRequestHandler):
+    <span class="tk-k">def</span> <span class="tk-f">do_POST</span>(self):
+        post = read_json(self)
+        db.execute(<span class="tk-s">"INSERT INTO posts ..."</span>)
+        <span class="tk-k">return</span> ok(<span class="tk-s">"queued"</span>)</code></pre>
+          <span class="badge badge--local">Local build</span>
+        </figure>
+        <div class="card__body">
+          <h3>Posting Dashboard — Back-End Build</h3>
+          <p>A running local server that queues and publishes posts for four channels:
+            Python HTTP API, SQLite state, slot rules enforced server side. It runs on a
+            workstation, not a public host, the code exhibits are in the Back End chapter.</p>
+          <ul class="chips"><li>Python</li><li>SQLite</li><li>REST API</li></ul>
+          <div class="card__links">
+            <a href="#backend">See the back end</a>
+            <button class="linklike" data-modal="modal-dash">Details</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="card reveal">
+        <figure class="card__media card__media--self" aria-hidden="true">
+          <img src="assets/mark.png" alt="" class="self-mark" width="150" height="150" />
+          <span class="badge badge--live">You are here</span>
+        </figure>
+        <div class="card__body">
+          <h3>This Flagship — Portfolio &amp; Lab</h3>
+          <p>The page you are reading: a chaptered reference of HTML5, CSS and JavaScript with
+            a live Python runtime, and the template the V.R World Media sites are built from.</p>
+          <ul class="chips"><li>HTML5</li><li>CSS</li><li>JavaScript</li><li>Python (WASM)</li></ul>
+          <div class="card__links">
+            <a href="https://github.com/YoseSynapse/portfolio" target="_blank" rel="noopener">Repo</a>
+            <a href="#lab">Open the Lab</a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ============ THE LAB ============ -->
+  <section class="section section--alt" id="lab">
+    <div class="section__head reveal">
+      <p class="eyebrow">The Lab · JavaScript, working</p>
+      <h2>Don’t take my word for it. Press things.</h2>
+      <p class="section__lede">Four live modules, written in vanilla JavaScript. If it’s on this
+        page, it runs. That’s the whole standard.</p>
+    </div>
+
+    <div class="lab-grid">
+      <article class="lab reveal">
+        <header class="lab__head"><h3>Candle Lab</h3><span class="lab__tag">Canvas · math · animation</span></header>
+        <canvas id="candleCanvas" width="640" height="300" class="lab__canvas" aria-label="Animated candlestick chart drawn by JavaScript"></canvas>
+        <div class="lab__stats" id="candleStats" aria-live="polite"></div>
+        <div class="lab__controls">
+          <button class="btn btn--small" id="candlePlay">Pause</button>
+          <button class="btn btn--small btn--ghost" id="candleNew">New series</button>
+        </div>
+        <p class="lab__note">Candles are generated and drawn frame by frame; the stats are computed
+          from the same data: change, average range, longest green streak.</p>
+      </article>
+
+      <article class="lab reveal">
+        <header class="lab__head"><h3>Data Lab</h3><span class="lab__tag">Arrays · filter · sort · DOM</span></header>
+        <div class="lab__controls lab__controls--wrap">
+          <input type="search" id="bookSearch" placeholder="Search the catalog…" aria-label="Search the catalog" />
+          <select id="bookSort" aria-label="Sort the catalog">
+            <option value="title">Sort · Title A–Z</option>
+            <option value="priceAsc">Sort · Price low → high</option>
+            <option value="priceDesc">Sort · Price high → low</option>
+            <option value="rating">Sort · Rating high → low</option>
+          </select>
+          <label class="range-wrap">Max price <input type="range" id="bookMax" min="10" max="60" value="60" step="1" /> <output id="bookMaxOut">$60</output></label>
+        </div>
+        <ul class="booklist" id="bookList"></ul>
+        <p class="lab__note">The FES Bookstore’s sample catalog, driven live: <span id="bookCount"></span>
+          Filter, sort and price cap it, the list renders from data, not markup.</p>
+      </article>
+
+      <article class="lab reveal">
+        <header class="lab__head"><h3>Accent Lab</h3><span class="lab__tag">CSS variables · live theming</span></header>
+        <p class="lab__note">This site’s palette is three signal colors on dark ink. Drag and the
+          whole page changes theme through CSS custom properties, no reload, no rebuild.</p>
+        <div class="swatches" role="group" aria-label="Accent choices">
+          <button class="swatch" data-accent="cyan" style="--sw:#00C2A8">Signal Cyan</button>
+          <button class="swatch" data-accent="violet" style="--sw:#6D28D9">Deep Violet</button>
+          <button class="swatch" data-accent="amber" style="--sw:#FFB020">Spark Amber</button>
+        </div>
+        <label class="range-wrap">Glow <input type="range" id="glowRange" min="0" max="100" value="55" /> <output id="glowOut">55%</output></label>
+        <div class="accent-demo" id="accentDemo">Aa — the quick brown fox, in the current accent.</div>
+        <p class="lab__note">Your choice is remembered on this device (localStorage): theming
+          as a feature, not a screenshot.</p>
+      </article>
+
+      <article class="lab reveal">
+        <header class="lab__head"><h3>Ask Lab</h3><span class="lab__tag">Accordion · native + JS</span></header>
+        <div class="acc" id="acc">
+          <button class="acc__btn" aria-expanded="false">Is every number on this page real?</button>
+          <div class="acc__panel"><p>Yes. Live sites, repos and languages are counted from the work
+            itself. The bookstore catalog is labeled sample data wherever it appears, including in the Data Lab.</p></div>
+          <button class="acc__btn" aria-expanded="false">Why does the bookstore say “checkout not wired”?</button>
+          <div class="acc__panel"><p>Because it isn’t. It’s a front end demonstration from coursework, the label is the difference between a demo and a deception.</p></div>
+          <button class="acc__btn" aria-expanded="false">Can a static page really run Python?</button>
+          <div class="acc__panel"><p>Yes, CPython compiled to WebAssembly (Pyodide) executes locally in
+            your browser. Try it in the Back End chapter below; no server is involved.</p></div>
+        </div>
+        <details class="native-acc">
+          <summary>Same trick, zero JavaScript (native &lt;details&gt;)</summary>
+          <p>This panel uses only HTML5. Knowing when *not* to write JavaScript is also the craft.</p>
+        </details>
+      </article>
+    </div>
+  </section>
+
+  <!-- ============ BACK END ============ -->
+  <section class="section" id="backend">
+    <div class="section__head reveal">
+      <p class="eyebrow">Back End · Python &amp; SQL</p>
+      <h2>The half a screenshot can’t show.</h2>
+      <p class="section__lede">A static host can’t run a server, so this chapter does two honest
+        things: it shows the patterns the dashboard actually runs on, and then it runs real
+        Python, in this page, so you can watch it work.</p>
+    </div>
+
+    <div class="code-grid">
+      <article class="code-card reveal">
+        <header class="code-card__head"><h3>Exhibit A — Python service</h3>
+          <button class="btn btn--tiny copy-btn" data-copy="codePy">Copy</button></header>
+        <pre class="code"><code id="codePy"><span class="tk-k">import</span> json, sqlite3
+<span class="tk-k">from</span> http.server <span class="tk-k">import</span> BaseHTTPRequestHandler
+
+db = sqlite3.connect(<span class="tk-s">"hub.db"</span>)
+db.row_factory = sqlite3.Row
+
+<span class="tk-k">class</span> <span class="tk-f">Hub</span>(BaseHTTPRequestHandler):
+    <span class="tk-k">def</span> <span class="tk-f">do_POST</span>(self):
+        post = json.loads(self.rfile.read(int(
+            self.headers[<span class="tk-s">"Content-Length"</span>])))
+        <span class="tk-k">if</span> slot_taken(db, post[<span class="tk-s">"channel"</span>], post[<span class="tk-s">"slot"</span>]):
+            <span class="tk-k">return</span> self.reply(<span class="tk-n">409</span>, {<span class="tk-s">"error"</span>: <span class="tk-s">"slot taken"</span>})
+        db.execute(<span class="tk-s">"INSERT INTO posts VALUES (?,?,?,?,?)"</span>,
+                   (post[<span class="tk-s">"id"</span>], post[<span class="tk-s">"channel"</span>],
+                    post[<span class="tk-s">"slot"</span>], post[<span class="tk-s">"caption"</span>], <span class="tk-s">"queued"</span>))
+        db.commit()
+        <span class="tk-k">return</span> self.reply(<span class="tk-n">201</span>, {<span class="tk-s">"status"</span>: <span class="tk-s">"queued"</span>})</code></pre>
+        <p class="code-card__note">The posting dashboard’s shape: a small Python HTTP API over
+          SQLite, with the rotation rules enforced server side, not trusted to the client.</p>
+      </article>
+
+      <article class="code-card reveal">
+        <header class="code-card__head"><h3>Exhibit B — SQL</h3>
+          <button class="btn btn--tiny copy-btn" data-copy="codeSql">Copy</button></header>
+        <pre class="code"><code id="codeSql"><span class="tk-k">SELECT</span> channel,
+       <span class="tk-f">COUNT</span>(*)            <span class="tk-k">AS</span> posts,
+       <span class="tk-f">SUM</span>(published)    <span class="tk-k">AS</span> live_posts
+<span class="tk-k">FROM</span>   posts
+<span class="tk-k">WHERE</span>  scheduled_for &gt;= <span class="tk-f">date</span>(<span class="tk-s">'now'</span>, <span class="tk-s">'-14 days'</span>)
+<span class="tk-k">GROUP</span>  <span class="tk-k">BY</span> channel
+<span class="tk-k">ORDER</span>  <span class="tk-k">BY</span> live_posts <span class="tk-k">DESC</span>;</code></pre>
+        <p class="code-card__note">The two week readout query: what actually went live, per channel, the same shape as the Friday content readouts. Parameterized queries only; user input
+          never touches SQL as text (that’s the injection lesson, applied).</p>
+      </article>
+    </div>
+
+    <article class="pyrun reveal">
+      <header class="lab__head"><h3>Python, live in this page</h3><span class="lab__tag">CPython · WebAssembly · Pyodide</span></header>
+      <p class="lab__note">Edit the code, press run. A real Python interpreter loads on demand and
+        executes locally, and the candle math below is computed by Python, not JavaScript.</p>
+      <textarea id="pyCode" class="pyrun__code" rows="11" spellcheck="false" aria-label="Python code">closes = [101.2, 102.8, 101.9, 104.3, 106.1, 105.2,
+          107.8, 109.4, 108.2, 110.6, 112.3, 111.1]
+
+returns = [(closes[i] / closes[i-1] - 1) * 100
+           for i in range(1, len(closes))]
+ma3 = [sum(closes[i-2:i+1]) / 3
+       for i in range(2, len(closes))]
+
+peak, max_dd = closes[0], 0.0
+for p in closes:
+    peak = max(peak, p)
+    max_dd = min(max_dd, (p / peak - 1) * 100)
+
+print(f"closes:      {len(closes)} points")
+print(f"net change:  {(closes[-1]/closes[0]-1)*100:+.2f}%")
+print(f"best day:    {max(returns):+.2f}%")
+print(f"worst day:   {min(returns):+.2f}%")
+print(f"3-pt MA end: {ma3[-1]:.2f}")
+print(f"max drawdown:{max_dd:.2f}%")</textarea>
+      <div class="lab__controls">
+        <button class="btn btn--small" id="pyRun">Run Python</button>
+        <span class="pyrun__status" id="pyStatus" role="status">Interpreter not loaded yet — first run fetches it (~seconds).</span>
+      </div>
+      <pre class="pyrun__out" id="pyOut" aria-live="polite"># output appears here</pre>
+    </article>
+  </section>
+
+  <!-- ============ SKILLS ============ -->
+  <section class="section section--alt" id="skills">
+    <div class="section__head reveal">
+      <p class="eyebrow">Skills · four lenses</p>
+      <h2>One developer, four ways of seeing.</h2>
+    </div>
+    <div class="tabs reveal" role="tablist" aria-label="Skill lenses">
+      <button class="tab is-on" role="tab" aria-selected="true" data-tab="web">Website Developer</button>
+      <button class="tab" role="tab" aria-selected="false" data-tab="soft">Software Developer</button>
+      <button class="tab" role="tab" aria-selected="false" data-tab="app">App Developer</button>
+      <button class="tab" role="tab" aria-selected="false" data-tab="sec">Cybersecurity Analyst</button>
+    </div>
+    <div class="tab-panels reveal">
+      <article class="panel is-on" data-panel="web" role="tabpanel">
+        <h3>Websites that work end-to-end</h3>
+        <p>Landing pages, funnels and storefronts: semantic HTML5, modern CSS, real JavaScript,
+          deployed and verified live. The three sites in the proof strip are this lens.</p>
+        <ul class="chips"><li>HTML5</li><li>CSS</li><li>JavaScript</li><li>Python</li><li>SQL</li></ul>
+      </article>
+      <article class="panel" data-panel="soft" role="tabpanel">
+        <h3>Software &amp; automation</h3>
+        <p>Tools and servers that remove manual work: APIs, schedulers, data pipelines, the posting dashboard is the standing example.</p>
+        <ul class="chips"><li>Python</li><li>JavaScript</li><li>SQL</li><li>Git &amp; GitHub</li><li>Bash</li></ul>
+      </article>
+      <article class="panel" data-panel="app" role="tabpanel">
+        <h3>Apps &amp; interfaces</h3>
+        <p>Interactive web apps with real state: forms, local storage, live data views, built mobile first and tested at phone widths.</p>
+        <ul class="chips"><li>JavaScript</li><li>HTML5</li><li>CSS</li><li>Python</li><li>SQLite</li></ul>
+      </article>
+      <article class="panel" data-panel="sec" role="tabpanel">
+        <h3>Security, studied &amp; applied <span class="honest">(study track)</span></h3>
+        <p>Secure by default habits learned in a dedicated cybersecurity &amp; SQL course:
+          parameterized queries, least privilege access, no secrets in code. A lens on every
+          build, not a certification claim.</p>
+        <ul class="chips"><li>Python</li><li>SQL</li><li>HTML / JS</li><li>Bash</li></ul>
+      </article>
+    </div>
+  </section>
+
+  <!-- ============ PROCESS ============ -->
+  <section class="section" id="process">
+    <div class="section__head reveal">
+      <p class="eyebrow">Process</p>
+      <h2>How a build ships.</h2>
+    </div>
+    <ol class="steps">
+      <li class="reveal"><span class="step__n">01</span><h3>Spec</h3>
+        <p>The page’s job, its audience, and what “done” means, written down before code.</p></li>
+      <li class="reveal"><span class="step__n">02</span><h3>Build</h3>
+        <p>Hand written, mobile first, every asset local and resolving. Nothing ships unfinished.</p></li>
+      <li class="reveal"><span class="step__n">03</span><h3>Verify</h3>
+        <p>Live checks at desktop and phone widths, a compliance scan, and an independent review, the builder never signs off on their own work.</p></li>
+      <li class="reveal"><span class="step__n">04</span><h3>Bank it</h3>
+        <p>Code to GitHub, visuals to the project archive, links into the profiles. Work that
+          lives on one laptop isn’t done.</p></li>
+    </ol>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="section section--alt" id="contact">
+    <div class="section__head reveal">
+      <p class="eyebrow">Contact</p>
+      <h2>Let’s build the next one.</h2>
+      <p class="section__lede">The form validates in your browser and opens your mail app with the
+        message composed. No data is stored or sent anywhere else.</p>
+    </div>
+    <div class="contact-grid">
+      <form class="cform reveal" id="contactForm" novalidate>
+        <label>Your name <input type="text" id="cfName" autocomplete="name" required /></label>
+        <label>Your email <input type="email" id="cfEmail" autocomplete="email" required /></label>
+        <label>Project type
+          <select id="cfType">
+            <option>Landing page</option><option>Campaign / funnel page</option>
+            <option>Portfolio / small-business site</option><option>Web app / tool</option>
+            <option>Something else</option>
+          </select></label>
+        <label>Budget feel
+          <input type="range" id="cfBudget" min="75" max="3000" step="25" value="600" />
+          <output id="cfBudgetOut">≈ $600</output></label>
+        <label>Message <textarea id="cfMsg" rows="4" required placeholder="What are we building?"></textarea></label>
+        <p class="cform__err" id="cfErr" role="alert"></p>
+        <button class="btn btn--primary" type="submit">Compose the email</button>
+      </form>
+      <aside class="cdirect reveal">
+        <h3>Direct</h3>
+        <p><a href="mailto:visionaryrealworld@gmail.com">visionaryrealworld@gmail.com</a></p>
+        <p><a href="https://github.com/yosesynapse" target="_blank" rel="noopener">github.com/yosesynapse</a></p>
+        <p><a href="https://www.linkedin.com/in/jose-gomez-3a3600225" target="_blank" rel="noopener">LinkedIn, Jose Gomez</a></p>
+        <p class="cdirect__note">Based in California · working in Pacific Time · replies within one business day.</p>
+        <meter class="loadmeter" min="0" max="100" low="40" high="75" optimum="20" value="30">Current project load: moderate</meter>
+        <p class="cdirect__note">Currently open for new builds.</p>
+      </aside>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <img src="assets/mark.png" alt="" class="footer__mark" width="56" height="56" />
+  <p>© <span id="year">2026</span> Jose Gomez · V.R World Media. Built by hand with HTML5, CSS,
+    JavaScript &amp; Python in the browser. No trackers, no cookies.</p>
+  <p class="footer__small">Flagship template v1, the design system the VRWM sites are built from.</p>
+  <button class="btn btn--tiny btn--ghost" id="toTop">Back to top ↑</button>
+</footer>
+
+<!-- ============ MODALS ============ -->
+<dialog class="modal" id="modal-fw">
+  <h3>Faceless Wicks — build notes</h3>
+  <p>A brand page held to a functioning standard: the Quiet Position banner is the page’s living
+    background (candles breathe smile ↔ frown), logo and watermark are the brand’s real files,
+    and the footer carries the five real socials plus the full education only disclaimer.</p>
+  <p>Shipped 2026-10-29 · verified live at desktop and 390 px widths.</p>
+  <button class="btn btn--small modal-close">Close</button>
+</dialog>
+<dialog class="modal" id="modal-store">
+  <h3>FES Bookstore — build notes</h3>
+  <p>Coursework storefront, finished honestly: real catalog grid, working mobile drawer,
+    demo banner on the page and in the README. Checkout is deliberately not wired and the
+    catalog is sample data, the label does the heavy lifting.</p>
+  <p>Shipped 2026-10-29 · verified live at desktop and 390 px widths.</p>
+  <button class="btn btn--small modal-close">Close</button>
+</dialog>
+<dialog class="modal" id="modal-dash">
+  <h3>Posting Dashboard — build notes</h3>
+  <p>Python + SQLite server that runs posting for four YouTube channels: slot rotation enforced
+    server side, uploads staged private, schedule and state in one hub database. It runs on a
+    local workstation; Exhibits A and B in the Back End chapter are its working patterns.</p>
+  <button class="btn btn--small modal-close">Close</button>
+</dialog>
+
+<div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+
+<script src="app.js?v=2"></script>
+</body>
+</html>
