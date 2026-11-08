@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Jose Gomez · Full Stack Developer</title>
+<title>Jose Gomez · Full-Stack Developer</title>
 <meta name="description" content="Jose Gomez builds websites, software, apps and secure back ends. Flagship portfolio: live projects, a working JavaScript lab, and real Python running in the browser." />
 <link rel="icon" href="assets/mark.png" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -42,7 +42,7 @@
     <a href="index.html#process">Process</a>
     <a href="index.html#contact">Contact</a>
   </nav>
-  <p class="drawer__note">Full stack developer</p>
+  <p class="drawer__note">Full-stack developer</p>
 </aside>
 <div class="scrim" id="scrim" hidden></div>
 
@@ -51,7 +51,7 @@
   <section class="hero">
     <canvas id="waveCanvas" class="hero__canvas" aria-hidden="true"></canvas>
     <div class="hero__inner">
-      <p class="eyebrow reveal">Full stack developer · Lake Elsinore, CA</p>
+      <p class="eyebrow reveal">Full-stack developer · Lake Elsinore, CA</p>
       <h1 class="hero__title reveal">Jose <span class="grad">Gomez</span></h1>
       <p class="hero__sub reveal">I build <strong>websites, software, apps</strong>, and the
         <strong>secure back ends</strong> behind them. This page is the flagship: every module on it
@@ -75,7 +75,7 @@
     <div class="strip__row">
       <span class="strip__label">Live right now</span>
       <a href="https://yosesynapse.github.io/faceless-wicks/" target="_blank" rel="noopener">Faceless Wicks · landing page</a>
-      <a href="https://yosesynapse.github.io/fes-bookstore/" target="_blank" rel="noopener">FES Bookstore · front end demo</a>
+      <a href="https://yosesynapse.github.io/fes-bookstore/" target="_blank" rel="noopener">FES Bookstore · front-end demo</a>
       <a href="https://yosesynapse.github.io/vrwm-legal/" target="_blank" rel="noopener">Legal, privacy &amp; terms</a>
       <a href="https://github.com/yosesynapse" target="_blank" rel="noopener">github.com/yosesynapse</a>
     </div>
@@ -115,7 +115,7 @@
           <span class="badge badge--live">Live</span>
         </figure>
         <div class="card__body">
-          <h3>FES Bookstore · Front End Demo</h3>
+          <h3>FES Bookstore · Front-End Demo</h3>
           <p>Coursework storefront rebuilt to a functioning standard: catalog grid, one class
             mobile drawer, honest demo banner, checkout intentionally not wired, prices are sample data.</p>
           <ul class="chips"><li>HTML5</li><li>CSS Grid</li><li>JavaScript</li></ul>
@@ -139,7 +139,7 @@
         <div class="card__body">
           <h3>Posting Dashboard · Back End Build</h3>
           <p>A running local server that queues and publishes posts for four channels:
-            Python HTTP API, SQLite state, slot rules enforced server side. It runs on a
+            Python HTTP API, SQLite state, slot rules enforced server-side. It runs on a
             workstation, not a public host, the code exhibits are in the Back End chapter.</p>
           <ul class="chips"><li>Python</li><li>SQLite</li><li>REST API</li></ul>
           <div class="card__links">
@@ -229,7 +229,7 @@
           <div class="acc__panel"><p>Yes. Live sites, repos and languages are counted from the work
             itself. The bookstore catalog is labeled sample data wherever it appears, including in the Data Lab.</p></div>
           <button class="acc__btn" aria-expanded="false">Why does the bookstore say “checkout not wired”?</button>
-          <div class="acc__panel"><p>Because it isn’t. It’s a front end demonstration from coursework, the label is the difference between a demo and a deception.</p></div>
+          <div class="acc__panel"><p>Because it isn’t. It’s a front-end demonstration from coursework, the label is the difference between a demo and a deception.</p></div>
           <button class="acc__btn" aria-expanded="false">Can a static page really run Python?</button>
           <div class="acc__panel"><p>Yes, CPython compiled to WebAssembly (Pyodide) executes locally in
             your browser. Try it in the Back End chapter below; no server is involved.</p></div>
@@ -274,7 +274,7 @@ db.row_factory = sqlite3.Row
         db.commit()
         <span class="tk-k">return</span> self.reply(<span class="tk-n">201</span>, {<span class="tk-s">"status"</span>: <span class="tk-s">"queued"</span>})</code></pre>
         <p class="code-card__note">The posting dashboard’s shape: a small Python HTTP API over
-          SQLite, with the rotation rules enforced server side, not trusted to the client.</p>
+          SQLite, with the rotation rules enforced server-side, not trusted to the client.</p>
       </article>
 
       <article class="code-card reveal">
@@ -287,7 +287,7 @@ db.row_factory = sqlite3.Row
 <span class="tk-k">WHERE</span>  scheduled_for &gt;= <span class="tk-f">date</span>(<span class="tk-s">'now'</span>, <span class="tk-s">'-14 days'</span>)
 <span class="tk-k">GROUP</span>  <span class="tk-k">BY</span> channel
 <span class="tk-k">ORDER</span>  <span class="tk-k">BY</span> live_posts <span class="tk-k">DESC</span>;</code></pre>
-        <p class="code-card__note">The two week readout query: what actually went live, per channel, the same shape as the Friday content readouts. Parameterized queries only; user input
+        <p class="code-card__note">The two-week readout query: what actually went live, per channel, the same shape as the Friday content readouts. Parameterized queries only; user input
           never touches SQL as text (that’s the injection lesson, applied).</p>
       </article>
     </div>
@@ -337,7 +337,7 @@ print(f"max drawdown:{max_dd:.2f}%")</textarea>
     </div>
     <div class="tab-panels reveal">
       <article class="panel is-on" data-panel="web" role="tabpanel">
-        <h3>Websites that work end to end</h3>
+        <h3>Websites that work end-to-end</h3>
         <p>Landing pages, funnels and storefronts: semantic HTML5, modern CSS, real JavaScript,
           deployed and verified live. The three sites in the proof strip are this lens.</p>
         <ul class="chips"><li>HTML5</li><li>CSS</li><li>JavaScript</li><li>Python</li><li>SQL</li></ul>
@@ -396,7 +396,7 @@ print(f"max drawdown:{max_dd:.2f}%")</textarea>
         <label>Project type
           <select id="cfType">
             <option>Landing page</option><option>Campaign / funnel page</option>
-            <option>Portfolio / small business site</option><option>Web app / tool</option>
+            <option>Portfolio / small-business site</option><option>Web app / tool</option>
             <option>Something else</option>
           </select></label>
         <label>Budget feel
@@ -447,7 +447,7 @@ print(f"max drawdown:{max_dd:.2f}%")</textarea>
 <dialog class="modal" id="modal-dash">
   <h3>Posting Dashboard · build notes</h3>
   <p>Python + SQLite server that runs posting for four YouTube channels: slot rotation enforced
-    server side, uploads staged private, schedule and state in one hub database. It runs on a
+    server-side, uploads staged private, schedule and state in one hub database. It runs on a
     local workstation; Exhibits A and B in the Back End chapter are its working patterns.</p>
   <button class="btn btn--small modal-close">Close</button>
 </dialog>
